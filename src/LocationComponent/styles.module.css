@@ -1,0 +1,58 @@
+.container {
+    width: fit-content;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.forecast {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+.days {
+    padding: 10px;
+    margin-right: 10px;
+}
+.minTemp {
+    padding: 10px;
+    background-color: #9e9090;
+    margin: 10px;
+}
+
+.celciusRound {
+    position: relative;
+}
+.celciusRound::before {
+    content: '';
+    position: absolute;
+    top: 1px;
+    transform: translateX(-50%);
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    z-index: 1;
+    border: 1px solid black;
+}
+.text {
+    height: 50px;
+}
+
+@media only screen and (max-width: 1030px) {
+    .container {
+        width: 600px;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+    .forecast {
+        display: ruby;
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .container {
+        width: 300px;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+}
