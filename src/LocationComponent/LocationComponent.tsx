@@ -64,7 +64,7 @@ const LocationComponent: React.FC = () => {
 
     return (
         <div className={styles.container}>
-            <h1>Прогноз погоды</h1>
+            <h1>Приложение прогноз погоды</h1>
             {location ? (
                 <>
                     <p><b>Страна:</b> {currentLocation?.country} <b>Город:</b> {currentLocation?.name}</p>
